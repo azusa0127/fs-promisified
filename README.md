@@ -17,7 +17,7 @@ This packages is designed and targeted at NodeJS v8.0.0+, with extensive use of 
 
 NodeJS v8.0.0 and up (as util.promisify is only provided since v8.0.0). Nothing else.
 
-## Usages:
+## Basic Usages:
 ```javascript
 const fs = require(`fspp`);
 
@@ -32,3 +32,6 @@ const main = async () => {
 // Sync functions example
 fs.rmdirSync(`sample`);
 ```
+
+## License
+This module is licensed under the terms of MIT License. Check the LICENSE file for more info.
