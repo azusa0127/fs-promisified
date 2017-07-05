@@ -1,14 +1,14 @@
 {
-  "name": "fs-promisified",
+  "name": "fspp",
   "version": "1.0.0",
-  "description": "Simple Promisified fs Wrapper.",
+  "description": "fs promisified plus - Simple Promisified fs Wrapper.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/azusa0127/fs-promisified.git"
+    "url": "git+https://github.com/azusa0127/fs-promisified-plus.git"
   },
   "keywords": [
     "fs",
@@ -21,7 +21,7 @@
   "author": "Phoenix (github.com/azusa0127)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/azusa0127/fs-promisified/issues"
+    "url": "https://github.com/azusa0127/fs-promisified-plus/issues"
   },
-  "homepage": "https://github.com/azusa0127/fs-promisified#readme"
+  "homepage": "https://github.com/azusa0127/fs-promisified-plus#readme"
 }
