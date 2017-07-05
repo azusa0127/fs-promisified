@@ -1,52 +1,56 @@
 /** fs-promisified - Simple Promisified fs Wrapper.
  *
- * @version 1.0.0
+ * @version 1.0.0 - API Based on NodeJS 8.1.3
  * @author Phoenix Song (github.com/azusa0127)
  */
-const fs = require(`fs`);
-const { promisify } = require(`util`);
+const fs = require( `fs` );
+const { promisify } = require( `util` );
 
+// Imports
 const
   /**
    * Promisified fs members;
    */
-  access = promisify(fs.access),
-  appendFile = promisify(fs.appendFile),
-  chmod = promisify(fs.chmod),
-  chown = promisify(fs.chown),
-  close = promisify(fs.close),
-  exists = async path => access(path, fs.ants.F_OK).then(() => true, () => false),
-  fchmod = promisify(fs.fchmod),
-  fchown = promisify(fs.fchown),
-  fdatasync = promisify(fs.fdatasync),
-  fstat = promisify(fs.fstat),
-  fsync = promisify(fs.fsync),
-  ftruncate = promisify(fs.ftruncate),
-  futimes = promisify(fs.futimes),
-  lchown = promisify(fs.lchown),
-  link = promisify(fs.link),
-  lstat = promisify(fs.lstat),
-  mkdir = promisify(fs.mkdir),
-  mkdtemp = promisify(fs.mkdtemp),
-  open = promisify(fs.open),
-  read = promisify(fs.read),
-  readdir = promisify(fs.readdir),
-  readfile = promisify(fs.readfile),
-  readlink = promisify(fs.readlink),
-  realpath = promisify(fs.realpath),
-  rename = promisify(fs.rename),
-  rmdir = promisify(fs.rmdir),
-  stat = promisify(fs.stat),
-  truncate = promisify(fs.truncate),
-  symlink = promisify(fs.symlink),
-  unlink = promisify(fs.unlink),
-  utimes = promisify(fs.utimes),
+  access = promisify( fs.access ),
+  appendFile = promisify( fs.appendFile ),
+  chmod = promisify( fs.chmod ),
+  chown = promisify( fs.chown ),
+  close = promisify( fs.close ),
+  exists = async path => access( path, fs.ants.F_OK ).then(() => true, () => false ),
+  fchmod = promisify( fs.fchmod ),
+  fchown = promisify( fs.fchown ),
+  fdatasync = promisify( fs.fdatasync ),
+  fstat = promisify( fs.fstat ),
+  fsync = promisify( fs.fsync ),
+  ftruncate = promisify( fs.ftruncate ),
+  futimes = promisify( fs.futimes ),
+  link = promisify( fs.link ),
+  lstat = promisify( fs.lstat ),
+  mkdir = promisify( fs.mkdir ),
+  mkdtemp = promisify( fs.mkdtemp ),
+  open = promisify( fs.open ),
+  read = promisify( fs.read ),
+  readdir = promisify( fs.readdir ),
+  readFile = promisify( fs.readFile ),
+  readlink = promisify( fs.readlink ),
+  realpath = promisify( fs.realpath ),
+  rename = promisify( fs.rename ),
+  rmdir = promisify( fs.rmdir ),
+  stat = promisify( fs.stat ),
+  truncate = promisify( fs.truncate ),
+  symlink = promisify( fs.symlink ),
+  unlink = promisify( fs.unlink ),
+  utimes = promisify( fs.utimes ),
 
   {
     /**
      * Inherited fs constants
      */
     constants,
+    F_OK,
+    R_OK,
+    W_OK,
+    X_OK,
     /**
      * Inherited fs classes
      */
@@ -71,8 +75,6 @@ const
     fsyncSync,
     ftruncateSync,
     futimesSync,
-    lchmodSync,
-    lchownSync,
     linkSync,
     lstatSync,
     mkdirSync,
@@ -102,7 +104,7 @@ const
     watchFile,
 } = fs;
 
-// Export
+// Exports
 module.exports = {
   access,
   appendFile,
@@ -117,7 +119,6 @@ module.exports = {
   fsync,
   ftruncate,
   futimes,
-  lchown,
   link,
   lstat,
   mkdir,
@@ -125,7 +126,7 @@ module.exports = {
   open,
   read,
   readdir,
-  readfile,
+  readFile,
   readlink,
   realpath,
   rename,
@@ -139,6 +140,10 @@ module.exports = {
    * Inherited fs constants
    */
   constants,
+  F_OK,
+  R_OK,
+  W_OK,
+  X_OK,
   /**
    * Inherited fs classes
    */
@@ -163,8 +168,6 @@ module.exports = {
   fsyncSync,
   ftruncateSync,
   futimesSync,
-  lchmodSync,
-  lchownSync,
   linkSync,
   lstatSync,
   mkdirSync,
