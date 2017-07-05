@@ -1,0 +1,27 @@
+{
+  "name": "fs-promisified",
+  "version": "1.0.0",
+  "description": "Simple Promisified fs Wrapper.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azusa0127/fs-promisified.git"
+  },
+  "keywords": [
+    "fs",
+    "promisify",
+    "warpper",
+    "for",
+    "async/await",
+    "use"
+  ],
+  "author": "Phoenix (github.com/azusa0127)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azusa0127/fs-promisified/issues"
+  },
+  "homepage": "https://github.com/azusa0127/fs-promisified#readme"
+}
