@@ -19,7 +19,7 @@ NodeJS v8.0.0 and up (as util.promisify is only provided since v8.0.0). Nothing 
 
 ## Basic Usages:
 ```javascript
-const fs = require(`fspp`);
+const fs = require(`fspp`);  // Full function of fs module inherited, so no need to include both fs and fspp.(you stil can if you want to). 
 
 // Promise use example
 fs.mkdir(`sample`).then( () => console.log(`sample folder created.`) ).catch(err => console.error(err));
