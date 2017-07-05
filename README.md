@@ -18,7 +18,7 @@ This packages is designed and targeted at NodeJS v8.0.0+, with extensive use of 
 NodeJS v8.0.0 and up (as util.promisify is only provided since v8.0.0). Nothing else.
 
 ## Usages:
-```
+```javascript
 const fs = require(`fspp`);
 
 // Promise use example
