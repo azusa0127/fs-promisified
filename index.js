@@ -1,6 +1,6 @@
 /** fs-promisified - Simple Promisified fs Wrapper.
  *
- * @version 1.0.0 - API Based on NodeJS 8.1.3
+ * @version 1.0.2 - API Based on NodeJS 8.1.3
  * @author Phoenix Song (github.com/azusa0127)
  */
 const fs = require( `fs` );
@@ -16,7 +16,7 @@ const
   chmod = promisify( fs.chmod ),
   chown = promisify( fs.chown ),
   close = promisify( fs.close ),
-  exists = async path => access( path, fs.ants.F_OK ).then(() => true, () => false ),
+  exists = async path => access( path, fs.F_OK ).then(() => true, () => false ),
   fchmod = promisify( fs.fchmod ),
   fchown = promisify( fs.fchown ),
   fdatasync = promisify( fs.fdatasync ),
