@@ -1,6 +1,6 @@
 {
   "name": "fspp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "fs promisified plus - Simple Promisified fs Wrapper.",
   "main": "index.js",
   "scripts": {

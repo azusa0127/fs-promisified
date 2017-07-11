@@ -1,6 +1,6 @@
 /** fs-promisified - Simple Promisified fs Wrapper.
  *
- * @version 1.0.3 - API Based on NodeJS 8.1.3
+ * @version 1.0.4 - API Based on NodeJS 8.1.3
  * @author Phoenix Song (github.com/azusa0127)
  */
 const fs = require( `fs` );
@@ -42,7 +42,7 @@ const
   unlink = promisify( fs.unlink ),
   utimes = promisify( fs.utimes ),
   write = promisify( fs.write ),
-
+  writeFile = promisify( fs.writeFile ),
   {
     /**
      * Inherited fs constants
@@ -138,6 +138,7 @@ module.exports = {
   unlink,
   utimes,
   write,
+  writeFile,
   /**
    * Inherited fs constants
    */

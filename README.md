@@ -15,7 +15,7 @@ This packages is designed and targeted at NodeJS v8.0.0+, with extensive use of 
 
 ### Dependency:
 
-NodeJS v8.0.0 and up (as util.promisify is only provided since v8.0.0). Nothing else.
+`NodeJS v8.0.0` and up (as util.promisify is only provided since v8.0.0). Nothing else.
 
 ## Basic Usages:
 ```javascript
@@ -67,6 +67,8 @@ fs.rmdirSync(`sample`);
   symlink,
   unlink,
   utimes,
+  write,
+  writeFile
 
 ### Inherited fs constants
 
@@ -127,6 +129,10 @@ fs.rmdirSync(`sample`);
   watch,
   watchFile,
 
+### ChangeLog
+1.0.4 / 2017-07-10
+  * Bug-fix, `fs.write` and `fs.writeFile` were missing in the promisified function list.
 
 ## License
-This module is licensed under the terms of MIT License. Check the LICENSE file for more info.
+Licensed under MIT
+Copyright (c) 2017 Phoenix Song
