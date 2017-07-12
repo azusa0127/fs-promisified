@@ -1,9 +1,9 @@
-/** fs-promisified - Simple Promisified fs Wrapper.
+/**
+ * fspp - fs-promisified-plus, a Simple Promisified fs Wrapper.
  *
- * @version 1.1.0 - API Based on NodeJS 8.1.4
+ * @version 1.1.0
  * @author Phoenix Song (github.com/azusa0127)
  */
-
 /**
  * ============================================================================
  * Requires.
@@ -16,7 +16,7 @@ const { promisify } = require(`util`);
  * Library.
  * ============================================================================
  */
-const fspp = Object.assign(nodefs, {
+const fspp = Object.assign({}, nodefs, {
   access: promisify(nodefs.access),
   appendFile: promisify(nodefs.appendFile),
   chmod: promisify(nodefs.chmod),
