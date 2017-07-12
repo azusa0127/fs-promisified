@@ -1,13 +1,9 @@
-# fs-promisified-plus
-Simple Promisified NodeJS.fs Wrapper.
+# fspp - fs-promisified-plus: a Simple Promisified NodeJS.fs Wrapper.
 
-### This pakcage is meant to be a quick drop-in replacement for NodeJS module 'fs'.
-- All callback functions are promisified with util.promisify.
-- Reinterpreted fs.exist with access(path, F_OK).
-- All constants inherited.
-- All synchronous functions inherited.
-- All class inherited.
-- All special functions inherited.
+### This pakcage is meant to be a quick drop-in replacement for NodeJS module `fs`.
+- All callback functions are promisified with `util.promisify`.
+- Reinterpreted `fs.exist` with `access(path, F_OK)`.
+- All other members from `fs` inherited including classes, special functions, sync functions and constants.
 
 ### User story:
 
@@ -35,8 +31,7 @@ const main = async () => {
 fs.rmdirSync(`sample`);
 ```
 
-## Full API list
-### Promisified Functions
+## Promisified Functions
   access,
   appendFile,
   chmod,
@@ -70,66 +65,9 @@ fs.rmdirSync(`sample`);
   write,
   writeFile
 
-### Inherited fs constants
-
-  constants,
-  F_OK,
-  R_OK,
-  W_OK,
-  X_OK,
-
-### Inherited fs classes
-
-  FSWatcher,
-  ReadStream,
-  Stats,
-  WriteStream,
-
-### Inherited fs synchronous methods
-
-  accessSync,
-  appendFileSync,
-  chmodSync,
-  chownSync,
-  closeSync,
-  existsSync,
-  fchmodSync,
-  fchownSync,
-  fdatasyncSync,
-  fstatSync,
-  fsyncfsyncSync,
-  fsyncSync,
-  ftruncateSync,
-  futimesSync,
-  linkSync,
-  lstatSync,
-  mkdirSync,
-  mkdtempSync,
-  openSync,
-  readdirSync,
-  readFileSync,
-  readlinkSync,
-  readSync,
-  realpathSync,
-  renameSync,
-  rmdirSync,
-  statSync,
-  symlinkSync,
-  truncateSync,
-  unlinkSync,
-  utimesSync,
-  writeFileSync,
-  writeSync,
-
-### Inherited fs special methods
-
-  createReadStream,
-  createWriteStream,
-  unwatchFile,
-  watch,
-  watchFile,
-
 ### ChangeLog
+1.1.0 / 2017-07-12
+  * Simplified implementation.
 1.0.4 / 2017-07-10
   * Bug-fix, `fs.write` and `fs.writeFile` were missing in the promisified function list.
 
