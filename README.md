@@ -68,6 +68,7 @@ fs.rmdirSync(`sample`);
 ### ChangeLog
 1.1.0 / 2017-07-12
   * Simplified implementation.
+ 
 1.0.4 / 2017-07-10
   * Bug-fix, `fs.write` and `fs.writeFile` were missing in the promisified function list.
 
